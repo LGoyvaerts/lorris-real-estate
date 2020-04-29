@@ -22,7 +22,7 @@ class Caption extends React.Component<CaptionProps, {}> {
     }
     return (
       <div className="homeCaption">
-        <div className="homeTitle">{getTranslation(this.props.lang, 'Immobilien mieten einfach gemacht')}</div>
+        <div className="homeTitle">{getTranslation(this.props.lang, 'Renting made easy')}</div>
         <div className="homeSubtitle">
           {getTranslation(this.props.lang, 'With Famireales - Real Estate HTML Template')}
         </div>

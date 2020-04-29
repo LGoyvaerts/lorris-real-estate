@@ -11,10 +11,10 @@ export async function reverseGeo(lat: number, lng: number) {
 } 
 const translations = {
   en: require('./Translate/en.json'),
-  vn: require('./Translate/vn.json')
+  de: require('./Translate/de.json')
 };
 export const enum SupportedLanguage {
-  vn = 'vn',
+  de = 'de',
   en = 'en'
 }
 export const getTranslation = (lang: SupportedLanguage, text: string, type?: 'text' | 'date' | 'currency') => {

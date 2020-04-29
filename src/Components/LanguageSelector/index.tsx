@@ -35,10 +35,10 @@ class LanguageSelector extends React.Component<LanguageSelectorProps, {}> {
             <span className="flag uk" />
           </li>
           <li
-            className={this.props.lang === SupportedLanguage.vn ? ' active' : ''}
-            onClick={(e) => this.changeLanguage(SupportedLanguage.vn)}
+            className={this.props.lang === SupportedLanguage.de ? ' active' : ''}
+            onClick={(e) => this.changeLanguage(SupportedLanguage.de)}
           >
-            <span className="flag vn" />
+            <span className="flag en" />
           </li>
         </ul>
       </div>
