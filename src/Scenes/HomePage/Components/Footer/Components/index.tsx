@@ -29,12 +29,12 @@ class FooterContainer extends React.Component<{}, {}> {
       <div className="footerContainer">
         <div className="row">
             <ListComp list={this.listCompany}>Company</ListComp>
-            <ListComp list={this.listDiscover}>Discover</ListComp>
+            {/*<ListComp list={this.listDiscover}>Discover</ListComp>*/}
             <GetInTouch>Get in Touch</GetInTouch>
             <Subscribe>Subscribe to Our Newsletter</Subscribe>
         </div>
         <div className="footerCopyRight">
-        FamiCare Company<br/> © Copy right FamiCare technology Co
+        Lorris BnB AG<br/> © Copyright Lorris BnB AG
         </div>
       </div>
     );
