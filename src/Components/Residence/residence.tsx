@@ -2,6 +2,7 @@ import * as React from "react";
 import {fetchResidentById, IResident} from "../../Services/Api/Residents/residents-service";
 import {RouteComponentProps} from "react-router-dom";
 import SearchMap from "../../Scenes/SearchPage/Components/SearchMap";
+import DateTimeForm from "./calendar";
 
 interface IResidenceRouteProps {
     id: string;
@@ -44,20 +45,27 @@ class Residence extends React.Component<RouteComponentProps<IResidenceRouteProps
                             <div className="description">{residence.address}</div>
                         </div>
                     </div>
-                    <div className="ui bulleted list">
-                        <div className="item">Name: {residence.name}</div>
-                        <div className="item">Adresse: {residence.address}</div>
-                        <div className="item">
-                            <div>Grössenangaben</div>
-                            <div className="list">
-                                <div className="item">Betten: {residence.beds}</div>
-                                <div className="item">Toiletten: {residence.toilets}</div>
-                                <div className="item">Fläche: {residence.square}</div>
+                    <div className="ui grid">
+                        <div className="ten wide column">
+                            <div className="ui bulleted list">
+                                <div className="item">Name: {residence.name}</div>
+                                <div className="item">Adresse: {residence.address}</div>
+                                <div className="item">
+                                    <div>Grössenangaben</div>
+                                    <div className="list">
+                                        <div className="item">Betten: {residence.beds}</div>
+                                        <div className="item">Toiletten: {residence.toilets}</div>
+                                        <div className="item">Fläche: {residence.square}</div>
+                                    </div>
+                                </div>
                             </div>
+                        </div>
+                        <div className="six wide column">
+                            <DateTimeForm/>
                         </div>
                     </div>
                     <div className="resultsMap">
-                        <SearchMap />
+                        <SearchMap/>
                     </div>
                 </div>
             ) : (
