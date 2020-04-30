@@ -21,7 +21,7 @@ interface InputMapState {
 class InputMap extends React.Component<{}, InputMapState> {
   addressDetail: HTMLInputElement | null;
   constructor() {
-    super();
+    super({});
     this.state = {
       isShow: false,
       center: {lat: 10.766748, lng: 106.705785},
