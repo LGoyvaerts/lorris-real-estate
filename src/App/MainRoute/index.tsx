@@ -16,6 +16,9 @@ import NewPropertyPage from 'Scenes/NewPropertyPage';
 import AgentPage from 'Scenes/AgentPage';
 import AdvicePage from 'Scenes/AdvicePage';
 import NewsPage from 'Scenes/NewsPage';
+import HaftungsAusschluss from "../../Scenes/HomePage/Components/Footer/Components/AGB/haftungsausschluss";
+import Urheberrecht from "../../Scenes/HomePage/Components/Footer/Components/AGB/urheberrecht";
+import Datenschutz from "../../Scenes/HomePage/Components/Footer/Components/AGB/datenschutz";
 
 const mapStateToProps = (state: RootState) => ({
   lang: state.status.lang
@@ -51,6 +54,9 @@ class App extends React.Component<AppProps, {}> {
           <Route exact={true} path="/advice/:type" component={AdvicePage} />
           <Route exact={true} path="/agent/:action" component={AgentPage} />
           <Route exact={true} path="/projects" component={NewsPage} />
+          <Route exact={true} path="/haftungsausschluss" component={HaftungsAusschluss} />
+          <Route exact={true} path="/urheberrecht" component={Urheberrecht} />
+          <Route exact={true} path="/datenschutz" component={Datenschutz} />
         </div>
       </Router>
     );
