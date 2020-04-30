@@ -24,9 +24,8 @@ class ListProperty extends React.Component<{}, IState> {
         return (
             <div className="listProperty">
                 <div className="row listPropertyHeader">
-                    <h3>Recently Listed Properties</h3>
-                    <h5>Fusce risus metus, placerat in consectetur eu, porttitor a est sed sed dolor lorem cras
-                        adipiscing</h5>
+                    <h3>Unsere aktuellen Empfehlungen</h3>
+                    <h5>Dies sind unsere Immobilien mit den aktuell besten Bewertungen von unsern Kunden und Spezialisten.</h5>
                 </div>
                 <div className="row listPropertyContent">
                     {residents.map((data, index) => {
