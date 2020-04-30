@@ -9,7 +9,7 @@ class SingleHouse extends React.Component<SingleHouseProps, {}> {
   render() {
     return (
       <div className="singleHouse">
-        <a href="#" className="card">
+        <a href={`/residents/${this.props.data.id}`} className="card">
           <div className="figure">
             <img src={this.props.data.img} alt="image" />
             <div className="figCaption">

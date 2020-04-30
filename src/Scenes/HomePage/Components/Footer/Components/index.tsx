@@ -8,12 +8,6 @@ import Subscribe from './Subscribe';
 class FooterContainer extends React.Component<{}, {}> {
   listCompany =  [
     'About',
-    'Jobs',
-    'Press',
-    'Blog',
-    'Help',
-    'Policies',
-    'Terms & Privacy'
   ];
   listDiscover = [
     'Become a Member',

@@ -12,7 +12,7 @@ class SearchMap extends React.Component<{}, SearchMapState> {
   constructor() {
     super();
     this.state = {
-      center: {lat: 10.766748, lng: 106.705785},
+      center: {lat: 46.947922	, lng: 7.440390},
       zoom: 15
     };
   }
@@ -27,10 +27,10 @@ class SearchMap extends React.Component<{}, SearchMapState> {
           zoom={this.state.zoom}
           onChange={this.onMapChange}
           bootstrapURLKeys={{
-            key: 'AIzaSyBuinFicS4HAGfIKW6rRutGFP9GWcReUn4'
+            key: 'AIzaSyAsZQWg7gtPFQbiKXiG1Dg6rJkbs4DJPmA'
           }}
         >
-          <MiniHouse lat={10.766748} lng={106.705785} />
+          <MiniHouse lat={46.947922	} lng={7.440390} />
         </GoogleMapReact>
       </div>
     );

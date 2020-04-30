@@ -1,7 +1,7 @@
 import * as React from 'react';
 import SingleHouse from 'Components/SingleHouse';
-import './style.css';
 import {fetchResidents, IResident} from '../../../../Services/Api/Residents/residents-service';
+import './style.css';
 
 interface IState {
     residents: IResident[];
